@@ -43,9 +43,9 @@ predicoes = floresta.predict(features_teste)
 
 st.write('Floresta construida')
 
-f1 = st.number_input('Digite o genero',min_value=0,max_value=1)
+f1 = st.number_input('Digite o genero (0=feminino, 1=masculino)',min_value=0,max_value=1)
 f2 = st.number_input('Digite a idade',min_value=1, max_value=200)
-f3 = st.number_input('Digite se eh hipertenso:',min_value=0,max_value=1)
+f3 = st.number_input('Digite se eh hipertenso: (0=nao, 1=sim)',min_value=0,max_value=1)
 f4 = st.number_input('Digite a f4')
 f5 = st.number_input('Digite a f5')
 f6 = st.number_input('Digite a f6')
