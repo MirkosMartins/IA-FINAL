@@ -1,4 +1,7 @@
 import pandas as pd
+import streamlit as st #importando o streamlit
+
+st.title('Floresta Randomica para AVC')
 
 dados = pd.read_csv('/content/drive/MyDrive/2022/IA-Engenharia/IA-FINAL/stroke.csv',sep=';')
 dados = dados.drop(columns=['id'])#apaga a coluna id
@@ -37,3 +40,5 @@ floresta.fit(features_treino,classes_treino)
 
 #testar quanto a floresta acerta
 predicoes = floresta.predict(features_teste)
+
+st.write('Floresta construida')
