@@ -42,3 +42,20 @@ floresta.fit(features_treino,classes_treino)
 predicoes = floresta.predict(features_teste)
 
 st.write('Floresta construida')
+
+f1 = st.number_input('Digite a f1')
+f2 = st.number_input('Digite a f2')
+f3 = st.number_input('Digite a f3')
+f4 = st.number_input('Digite a f4')
+f5 = st.number_input('Digite a f5')
+f6 = st.number_input('Digite a f6')
+f7 = st.number_input('Digite a f7')
+f8 = st.number_input('Digite a f8')
+f9 = st.number_input('Digite a f9')
+f10 = st.number_input('Digite a f10')
+f11 = st.number_input('Digite a f11')
+
+if st.button('O sujeito tera AVC?'):
+  resposta = floresta.predict([f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11])#fara a predicao
+  st.write(resposta)
+
