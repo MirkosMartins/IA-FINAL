@@ -3,7 +3,7 @@ import streamlit as st #importando o streamlit
 
 st.title('Floresta Randomica para AVC')
 
-dados = pd.read_csv('/content/drive/MyDrive/2022/IA-Engenharia/IA-FINAL/stroke.csv',sep=';')
+dados = pd.read_csv('stroke.csv',sep=';')
 dados = dados.drop(columns=['id'])#apaga a coluna id
 dados.head()
 nomes_colunas = dados.columns.to_list()#coloca os nomes das colunas em uma lista
