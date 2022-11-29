@@ -53,9 +53,8 @@ f7 = st.number_input('Digite a f7')
 f8 = st.number_input('Digite a f8')
 f9 = st.number_input('Digite a f9')
 f10 = st.number_input('Digite a f10')
-f11 = st.number_input('Digite a f11')
 
 if st.button('O sujeito tera AVC?'):
-  resposta = floresta.predict([[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10,f11]])#fara a predicao
+  resposta = floresta.predict([[f1,f2,f3,f4,f5,f6,f7,f8,f9,f10]])#fara a predicao
   st.write(resposta)
 
